@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <!-- EXTENSION de template existente (NO ocupa t-name) -->
+    <t t-inherit="point_of_sale.ControlButtons"
+       t-inherit-mode="extension">
+
+        <xpath expr="//div[contains(@class,'control-buttons')]" position="inside">
+            <button class="btn btn-secondary btn-lg py-5 w-100"
+                    t-on-click="onClickSellByAmount"
+                    title="Vender semillas por precio exacto">
+                <i class="fa fa-money-bill-wave me-1"/>
+                <i class="fa fa-balance-scale ms-1 me-1"/>
+                <span>Vender semillas por precio</span>
+            </button>
+        </xpath>
+
+    </t>
+
+</templates>
